@@ -2,8 +2,15 @@
   "name": "MLOps Zoomcamp with Anaconda",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "postCreateCommand": "bash .devcontainer/setup-anaconda.sh",
+  "remoteEnv": {
+    "PATH": "/workspaces/mlops-zoomcamp/anaconda3/bin:${PATH}"
+  },
   "customizations": {
     "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ],
       "settings": {
         "python.defaultInterpreterPath": "/workspaces/mlops-zoomcamp/anaconda3/bin/python"
       }
