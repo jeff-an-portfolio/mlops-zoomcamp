@@ -21,3 +21,7 @@ __pycache__/
 
 
 .DS_Store
+.conda/
+.vscode/
+*.sh
+anaconda3/
